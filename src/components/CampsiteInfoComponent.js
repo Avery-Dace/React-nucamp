@@ -19,6 +19,8 @@ class CommentForm extends Component {
         this.toggleModal = this.toggleModal.bind(this);
     }
 
+    
+
     handleSubmit(values) {
         console.log("Current state is: " + JSON.stringify(this.values));
         alert("Current state is: " + JSON.stringify(this.values));
@@ -62,7 +64,7 @@ class CommentForm extends Component {
                                     />
                                     <Errors
                                         className="text-danger"
-                                        model=".firstName"
+                                        model=".author"
                                         show="touched"
                                         component="div"
                                         messages={{
