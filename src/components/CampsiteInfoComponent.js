@@ -12,7 +12,7 @@ class CommentForm extends Component {
         super(props);
         this.state= {
             isModalOpen: false,
-            rating: 5,
+            rating: 1,
             author: '',
             text:''
         };
@@ -22,8 +22,8 @@ class CommentForm extends Component {
     
 
     handleSubmit(values) {
-        console.log("Current state is: " + JSON.stringify(this.values));
-        alert("Current state is: " + JSON.stringify(this.values));
+        console.log("Current state is: " + JSON.stringify(values));
+        alert("Current state is: " + JSON.stringify(values));
     }
 
     toggleModal() {
